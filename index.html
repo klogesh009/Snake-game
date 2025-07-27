@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Set the viewport so the layout fits nicely on mobile devices -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="game-container">
+    <!-- The canvas element where the snake game will be drawn -->
+    <canvas id="gameCanvas"></canvas>
+    <div id="score-board">Score: <span id="score">0</span></div>
+    <!-- On‑screen controls for touch devices -->
+    <div id="controls">
+      <div class="control-row">
+        <button id="upBtn" class="control-btn" aria-label="Up">▲</button>
+      </div>
+      <div class="control-row">
+        <button id="leftBtn" class="control-btn" aria-label="Left">◀</button>
+        <button id="downBtn" class="control-btn" aria-label="Down">▼</button>
+        <button id="rightBtn" class="control-btn" aria-label="Right">▶</button>
+      </div>
+    </div>
+  </div>
+  <!-- Game over overlay -->
+  <div id="game-over" class="hidden" role="alertdialog">
+    <div class="game-over-content">
+      <h2>Game Over</h2>
+      <p>Your Score: <span id="final-score">0</span></p>
+      <button id="restartBtn">Restart</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
